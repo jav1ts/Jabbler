@@ -3,5 +3,9 @@ mongoose.set("debug", true);
 mongoose.Promise = Promise;
 mongoose.connect("mongodb://localhost/jabbler", {
     keepAlive: true,
-    useMongoClient: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+    // useMongoClient: true
 });
+
+module.exports.User = require("./user");
