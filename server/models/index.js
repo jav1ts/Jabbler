@@ -4,7 +4,8 @@ mongoose.Promise = Promise;
 mongoose.connect("mongodb://localhost/jabbler", {
     keepAlive: true,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
     // useMongoClient: true
 });
 
