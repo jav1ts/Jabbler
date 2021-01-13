@@ -8,7 +8,6 @@ const Homepage = () => (
         <Link to="/signup" className="btn btn-primary">
             Sign up here
         </Link>
-
     </div>
 );
 
